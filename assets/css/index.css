@@ -1,6 +1,114 @@
+:root {
+    --Tomato : hsl(4, 100%, 67%);
+    --DarkSlateGrey : hsl(234, 29%, 20%);
+    --CharcoalGrey : hsl(235, 18%, 26%);
+    --Grey : hsl(231, 7%, 60%);
+    --White : hsl(0, 0%, 100%);
+    --RobotoRegular : Roboto Regular;
+    --RobotoBold : Roboto Bold;
+}
+@font-face {
+    font-family: Roboto Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto Bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: var(--RobotoRegular);
+}
+body {
+    background: var(--CharcoalGrey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.card {
+    background: var(--White);
+    border-radius: 1.5rem;
+    /* max-width: 42rem; */
+    width: 42rem;
+    padding: 1rem 0;
+    box-shadow: 5px 10px 20px var(--DarkSlateGrey);
+    display: flex;
+    justify-content: flex-start;
+    /* gap: 1rem; */
+    color: var(--DarkSlateGrey);
+}
+.card .left,
+.card .right {
+    flex: 1;
+    width: 100%;
+}
+.card .left {
+    padding: 3rem 2rem 3rem 3rem;
+    font-size: .7rem;
+}
+.card .left h1 {
+    font-family: var(--RobotoBold);
+    font-size: 2.5rem;
+}
+.card .left>p {
+    margin-block: 1rem;
+}
+.card .themes {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.card .themes .theme {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .7rem;
+}
+.card .themes .theme svg {
+    width: 1rem;
+    height: 1rem;
+}
+.card .left form {
+    margin-block-start: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.card .left form label{
+    font-family: var(--RobotoBold);
+}
+.card .left form input {
+    padding: .7rem 1rem;
+    border-radius: .3rem;
+    border: none;
+    transition: .5s ease;
+    color: inherit;
+    font-size: .7rem;
+}
+.card .left form input[type="email"] {
+    border: 1px solid var(--Grey);
+}
+.card .left form input[type="email"]:focus {
+    border: 1px solid var(--CharcoalGrey);
+}
+.card .left form input[type="submit"] {
+    background: var(--DarkSlateGrey);
+    color: var(--White);
+    margin-block: 1rem;
+    cursor: pointer;
+}
+.card .left form input[type="submit"]:hover {
+    background: var(--CharcoalGrey);
+}
+
+.card .right {
+    background-image: url(../images/illustration-sign-up-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    margin-inline: 1rem;
 }
