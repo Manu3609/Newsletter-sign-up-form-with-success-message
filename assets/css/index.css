@@ -1,5 +1,6 @@
 :root {
     --Tomato : hsl(4, 100%, 67%);
+    --TomatoTransparent : hsla(4, 100%, 67%, .2);
     --DarkSlateGrey : hsl(234, 29%, 20%);
     --CharcoalGrey : hsl(235, 18%, 26%);
     --Grey : hsl(231, 7%, 60%);
@@ -8,7 +9,9 @@
     --RobotoBold : Roboto Bold;
     /* GRADIENT */
     --PinkColor : hsl(347.78deg 98.82% 66.86%);
+    --PinkColorTransparent : rgba(254, 87, 120, 0.3);
     --OrangeColor : hsl(13.37deg 100% 62.16%);
+    --Gradient : linear-gradient(60deg, var(--PinkColor), var(--OrangeColor));
 }
 @font-face {
     font-family: Roboto Regular;
@@ -64,6 +67,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    width: 90%;
 }
 .card .themes .theme {
     display: flex;
@@ -71,9 +75,15 @@ body {
     justify-content: flex-start;
     gap: .7rem;
 }
-.card .themes .theme svg {
+.card .themes .theme .svg {
     width: 1rem;
     height: 1rem;
+    aspect-ratio: 1;
+    border-radius: 2rem;
+    background-image: url(../images/icon-list.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .card .left form {
     margin-block-start: 1.5rem;
@@ -83,6 +93,16 @@ body {
 }
 .card .left form label{
     font-family: var(--RobotoBold);
+    display: flex;
+    justify-content: space-between;
+}
+.card .left form label span {
+    text-align: right;
+    color: var(--Tomato);
+    display: none;
+}
+.card .left form label span.invalid {
+    display: block;
 }
 .card .left form input {
     padding: .7rem 1rem;
@@ -95,6 +115,11 @@ body {
 .card .left form input[type="email"] {
     border: 1px solid var(--Grey);
 }
+.card .left form input[type="email"].invalid {
+    border: 1px solid var(--PinkColor);
+    background: var(--TomatoTransparent);
+    color: var(--PinkColor);
+}
 .card .left form input[type="email"]:focus {
     border: 1px solid var(--CharcoalGrey);
 }
@@ -105,7 +130,8 @@ body {
     cursor: pointer;
 }
 .card .left form input[type="submit"]:hover {
-    background-image: linear-gradient(60deg, var(--PinkColor), var(--OrangeColor));
+    background-image: var(--Gradient);
+    box-shadow: 0 10px 10px var(--PinkColorTransparent);
 }
 
 .card .right {
@@ -114,4 +140,61 @@ body {
     background-position: center;
     border-radius: 1rem;
     margin-inline: 1rem;
+}
+@media only screen and (max-width: 550px) {
+    * {
+        font-size: .95rem;
+    }
+    body {
+        align-items: start;
+        background: inherit;
+    }
+    .card {
+        flex-direction: column-reverse;
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+    .card .left,
+    .card .right {
+        flex: auto;
+        width: 100%;
+    }
+    .card .left {
+        padding: 1.5rem;
+        padding-top: 2rem;
+    }
+    .card .left>p {
+        margin-block: 1.2rem;
+    }
+    .card .left .themes {
+        gap: 1rem;
+    }
+    .card .left .themes .theme {
+        align-items: baseline;
+    }
+    .card .themes .theme .svg {
+        width: .95rem;
+        height: .95rem;
+        top: 2px;
+        position: relative;
+    }
+    .card .left form label,
+    .card .left form label span {
+        font-size: .7rem;
+    }
+    .card .left form input {
+        font-size: .95rem;
+        padding: 1rem;
+    }
+    .card .right {
+        height: 12rem;
+        margin: 0;
+        background-image: url(../images/illustration-sign-up-mobile.svg);
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 }
