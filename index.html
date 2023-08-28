@@ -31,12 +31,18 @@
                     <span>Valid email required</span>
                 </label>
                 <input type="email" name="mail" id="mail" aria-labelledby="mailLabel" placeholder="email@company.com">
-                <input type="submit" value="Subscribe to monthly newsletter">
+                <input type="submit" formnovalidate="formnovalidate" value="Subscribe to monthly newsletter">
             </form>
         </div>
         <div class="right">
             <div class="image"></div>
         </div>
+    </div>
+    <div class="successBox">
+        <div class="iconSuccess"></div>
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span id="userEmail"></span>. Please open it and click the button inside to confirm your subscription.</p>
+        <a href="#" class="dissmiss">Dissmiss message</a>
     </div>
     <script src="./assets/js/index.js"></script>
 </body>
