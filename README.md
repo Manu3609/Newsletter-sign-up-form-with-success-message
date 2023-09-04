@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My Frontend Mentor solution](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-suMxJM0FIv)
+- Live Site URL: [Newsletter SignUp - Fanantenana Emmanuel](https://manu3609.github.io/Newsletter-sign-up-form-with-success-message/)
 
 ## My process
 
