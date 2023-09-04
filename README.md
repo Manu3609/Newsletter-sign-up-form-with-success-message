@@ -7,6 +7,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [Frontend Mentor - Newsletter sign-up form with success message solution](#frontend-mentor---newsletter-sign-up-form-with-success-message-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
+    - [Screenshot](#screenshot)
     - [The challenge](#the-challenge)
     - [Links](#links)
   - [My process](#my-process)
@@ -14,6 +15,10 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Author](#author)
 
 ## Overview
+
+### Screenshot
+
+![](./assets/images/Newsletter-Sign-Up-Fanantenana-Emmanuel.png)
 
 ### The challenge
 
