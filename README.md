@@ -1,16 +1,17 @@
-# Frontend Mentor - Notifications page solution
+# Frontend Mentor - Newsletter sign-up form with success message solution
 
-This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC).
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv)
 
 ## Table of contents
 
-- [Frontend Mentor - Notifications page solution](#frontend-mentor---notifications-page-solution)
+- [Frontend Mentor - Newsletter sign-up form with success message solution](#frontend-mentor---newsletter-sign-up-form-with-success-message-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
   - [Author](#author)
 
 ## Overview
@@ -29,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My frontend mentor Solution](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-suMxJM0FIv)
-- Live Site URL: [Newsletter sign-up form - Fanantenana Emmanuel](https://manu3609.github.io/Newsletter-sign-up-form-with-success-message/)
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -40,8 +41,30 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
+### What I learned
+
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+
+To see how you can add code snippets, see below:
+
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉')
+}
+```
+
+
 ## Author
 
-- Github - [Fanantenana Emmanuel](https://github.com/Manu3609/)
-- Frontend Mentor - [@Manu3609](https://www.frontendmentor.io/profile/Manu3609)
-- Instagram - [@manustxrk](https://www.instagram.com/manustxrk/)
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
